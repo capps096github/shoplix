@@ -1,7 +1,7 @@
 name: shoplix
 description: A new Flutter project.
 
-publish_to: 'none' 
+publish_to: "none"
 
 version: 1.0.0+1
 
@@ -12,8 +12,69 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   cupertino_icons: ^1.0.2
+  ionicons:
+
+  # Customisable Columns and Rows
+  flextras:
+
+  flash:
+
+  # State Management
+  flutter_riverpod:
+
+  # animations
+  animations:
+
+  # intl
+  intl:
+
+  # Fonts
+  google_fonts:
+
+  # Images
+  cached_network_image:
+
+  # Highlighting the search strings
+  substring_highlight:
+
+  # Animating Text
+  animated_text_kit:
+
+  # Persisting Data Storage
+  hive:
+  hive_flutter:
+
+  # Lottie Animations
+  lottie:
+
+  # Blur hash
+  flutter_blurhash:
+
+  #notification badges
+  badges:
+
+  # Staggered Grid View
+  flutter_staggered_grid_view:
+
+  # Grid
+  syncfusion_flutter_datagrid:
+
+  # Firebase
+  firebase_core:
+  
+  # Firebase Cloud
+  cloud_firestore:
+
+  # Authentication
+  firebase_auth:
+
+  # google auth
+  google_sign_in:
+
+  # app analytics
+  firebase_analytics:
+
 
 dev_dependencies:
   flutter_test:
@@ -21,11 +82,8 @@ dev_dependencies:
 
   flutter_lints: ^1.0.0
 
-
 flutter:
-
   uses-material-design: true
 
-
-
-
+assets:
+  - icons/
