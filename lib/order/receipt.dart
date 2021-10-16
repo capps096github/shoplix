@@ -32,138 +32,138 @@ class Receipt extends ConsumerWidget {
     final formatedDate =
         DateFormat('EE, dd MMMM yyyy -- hh:mm a').format(currentTimeAndDate);
 
-    return  Container(
-        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
-        color: kalyaOrange50,
-        child: ClipPath(
-          clipper: OrderClipper(true, true),
-          child: Container(
-            decoration: BoxDecoration(
-              color: shoplixWhite,
-              border: Border.all(
-                color: c,
-                width: 1.2,
-              ),
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
+      color: kalyaOrange50,
+      child: ClipPath(
+        clipper: OrderClipper(true, true),
+        child: Container(
+          decoration: BoxDecoration(
+            color: shoplixWhite,
+            border: Border.all(
+              color: c,
+              width: 1.2,
             ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Container(
-                  color: c,
-                  child: Padding(
-                    padding: const EdgeInsets.all(18),
-                    child: Center(
-                      child: Text(
-                        'Order Receipt',
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w700,
-                          color: c2,
-                        ),
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                color: c,
+                child: Padding(
+                  padding: const EdgeInsets.all(18),
+                  child: Center(
+                    child: Text(
+                      'Order Receipt',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: c2,
                       ),
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Image.asset(
-                    'images/kalya-logo.png',
-                    height: _imageHeight,
-                  ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset(
+                  'icons/shoplix_black.png',
+                  height: _imageHeight,
                 ),
-                const Padding(
-                  padding: EdgeInsets.all(8),
-                  child: OrderItems(),
+              ),
+              const Padding(
+                padding: EdgeInsets.all(8),
+                child: OrderItems(),
+              ),
+              const BoldText(
+                text: 'ORDER DETAILS',
+                decoration: TextDecoration.underline,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const ReceiptText(
+                      boldText: 'BY:',
+                      text: '@$_name',
+                    ),
+                    const ReceiptText(
+                      boldText: 'ID:',
+                      text: '_user.uid#',
+                    ),
+                    ReceiptText(
+                      boldText: 'DAY:',
+                      text: formatedDate,
+                    ),
+                    ReceiptText(
+                      boldText: 'READY BY:',
+                      text: formatedTimeAndDate,
+                    ),
+                    ReceiptText(
+                      boldText: 'TIME LEFT:',
+                      text: '${difference.inHours}+ Hours',
+                    ),
+                  ],
                 ),
-                const BoldText(
-                  text: 'ORDER DETAILS',
-                  decoration: TextDecoration.underline,
+              ),
+              Container(
+                margin: const EdgeInsets.all(8.0),
+                decoration: BoxDecoration(
+                  color: shoplixColor,
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                   const   ReceiptText(
-                        boldText: 'BY:',
-                        text: '@$_name',
-                      ),
-                     const ReceiptText(
-                        boldText: 'ID:',
-                        text: '_user.uid#',
-                      ),
-                      ReceiptText(
-                        boldText: 'DAY:',
-                        text: formatedDate,
-                      ),
-                      ReceiptText(
-                        boldText: 'READY BY:',
-                        text: formatedTimeAndDate,
-                      ),
-                      ReceiptText(
-                        boldText: 'TIME LEFT:',
-                        text: '${difference.inHours}+ Hours',
-                      ),
-                    ],
-                  ),
+                height: 3,
+              ),
+              BoldText(
+                text: '© The Shoplix App - ${DateTime.now().year}',
+                textColor: const Color(0xFF192D30),
+              ),
+              const BoldText(
+                text: 'GET IT TODAY',
+                textColor: shoplixFavoritePink,
+                decoration: TextDecoration.underline,
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 4),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: const [
+                    ReceiptText(
+                      boldText: 'PLAY STORE:',
+                      text: 'Shoplix App',
+                      textColor: shoplixWhatsApp,
+                    ),
+                    ReceiptText(
+                      boldText: 'WEB:',
+                      textColor: shoplixBlue,
+                      isLink: true,
+                      text: 'https://kalyacourtshotel.web.app',
+                    ),
+                  ],
                 ),
-                Container(
-                  margin: const EdgeInsets.all(8.0),
-                  decoration: BoxDecoration(
-                    color: shoplixColor,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  height: 3,
+              ),
+              const BoldText(
+                text:
+                    'Powered by The C APPS TEAM\n(+256 780955031)\ncapps096team@gmail.com',
+              ),
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 500),
+                color: c,
+                height: 50,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Expanded(
+                      child: Container(),
+                    ),
+                  ],
                 ),
-                BoldText(
-                  text: '© The Shoplix App - ${DateTime.now().year}',
-                  textColor: const Color(0xFF192D30),
-                ),
-                const BoldText(
-                  text: 'GET IT TODAY',
-                  textColor: shoplixFavoritePink,
-                  decoration: TextDecoration.underline,
-                ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 4),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children:const [
-                      ReceiptText(
-                        boldText: 'PLAY STORE:',
-                        text: 'Shoplix App',
-                        textColor: shoplixWhatsApp,
-                      ),
-                      ReceiptText(
-                        boldText: 'WEB:',
-                        textColor: shoplixBlue,
-                        isLink: true,
-                        text: 'https://kalyacourtshotel.web.app',
-                      ),
-                    ],
-                  ),
-                ),
-                const BoldText(
-                  text:
-                      'Powered by The C APPS TEAM\n(+256 780955031)\ncapps096team@gmail.com',
-                ),
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 500),
-                  color: c,
-                  height: 50,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Expanded(
-                        child: Container(),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
+      ),
     );
   }
 }

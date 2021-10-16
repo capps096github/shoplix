@@ -13,7 +13,7 @@ class FirebaseConnector extends ConsumerWidget {
     return firebaseConnector.when(
       data: (_) => const HiveConnector(),
       loading: () => Container(
-        color: shoplixWhite,
+        color: shoplixOrange,
         child: const ShoplixLogo(),
       ),
       error: (error, stackTrace) => ErrorWidget(error),

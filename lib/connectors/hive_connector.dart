@@ -29,7 +29,10 @@ class _HiveConnectorState extends State<HiveConnector> {
                 // no ads for web
                 return const Shoplix();
               },
-              loading: () => const ShoplixLogo(),
+              loading: () => Container(
+                    color: shoplixOrange,
+                    child: const ShoplixLogo(),
+                  ),
               error: (error, stackTrace) => ErrorWidget(error)),
         );
       },

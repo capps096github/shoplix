@@ -1,6 +1,6 @@
 import '../app_exporter.dart';
 import 'add_to_cart_button.dart';
-import 'add_to_favourite.dart';
+
 
 class BottomNavBar extends ConsumerWidget {
   const BottomNavBar({
@@ -27,7 +27,7 @@ class BottomNavBar extends ConsumerWidget {
                   bagHive.addItemToBag(BagItem.fromMenuItem(item: menuItem)),
             ),
           ),
-          AddToFavorite(menuItem: menuItem),
+          // AddToFavorite(menuItem: menuItem),
         ],
       ),
     );

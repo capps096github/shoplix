@@ -64,7 +64,7 @@ class OrderScreen extends ConsumerWidget {
                 },
               ),
               title: Image.asset(
-                'images/kalya-logo.png',
+                'icons/shoplix_black.png',
                 height: _imageHeight,
               ),
               pinned: true,

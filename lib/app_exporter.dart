@@ -38,6 +38,8 @@ export 'package:google_sign_in/google_sign_in.dart';
 // *[Cloud Firestore]
 export 'package:cloud_firestore/cloud_firestore.dart';
 
+export 'package:url_strategy/url_strategy.dart';
+
 // Shared
 export 'shared/exporter.dart';
 
