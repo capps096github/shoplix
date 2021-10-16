@@ -56,7 +56,7 @@ class _DrinkChipsState extends State<DrinkChips> with RestorationMixin {
                         ? const CircleAvatar(
                             backgroundColor: shoplixWhite,
                             child: Icon(
-                              Icons.fastfood,
+                              Ionicons.fast_food,
                               size: 14,
                               color: shoplixColor,
                             ),

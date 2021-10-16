@@ -123,8 +123,9 @@ class BagItemTile extends ConsumerWidget {
                                                   : 'From the Drinks Menu',
                                               child: Icon(
                                                 isFood
-                                                    ? Icons.restaurant_menu
-                                                    : Icons.fastfood,
+                                                    ? Ionicons.pizza
+                                                    : Ionicons
+                                                        .fast_food_outline,
                                                 color: kalyaOrange50,
                                                 size: 16,
                                               ),

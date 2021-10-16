@@ -21,7 +21,7 @@ class TextStyles {
       fontWeight: FontWeight.w400,
       height: 1);
   static TextStyle fraunces = TextStyle(
-      fontFamily: GoogleFonts.fraunces().fontFamily,
+      fontFamily: GoogleFonts.lato().fontFamily,
       fontWeight: FontWeight.w400,
       height: 1);
 
@@ -34,12 +34,6 @@ class TextStyles {
         fontSize: FontSizes.s24,
         letterSpacing: -.5,
         height: 1.16,
-        shadows: const [
-          Shadow(
-            color: shoplixColor,
-            offset: Offset(1, 1),
-          ),
-        ],
       );
   static TextStyle get h3 =>
       h1.copyWith(fontSize: FontSizes.s14, letterSpacing: -.05, height: 1.29);

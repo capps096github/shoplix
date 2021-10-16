@@ -50,9 +50,7 @@ class SuggestionsList extends StatelessWidget {
             loading: () => const Center(
                 child: CircularProgressIndicator(color: shoplixColor)),
             error: (error, stackTrace) {
-              return Container(
-                color: Colors.red,
-              );
+              return ErrorWidget(error);
             });
       }),
     );

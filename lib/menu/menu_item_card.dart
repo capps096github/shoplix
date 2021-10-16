@@ -15,7 +15,7 @@ class MenuItemCard extends ConsumerWidget {
   Widget build(BuildContext context, ScopedReader watch) {
     // timeDilation = 2;
     final isFood = menuItem.group == 'Food';
-    final icon = isFood ? Icons.restaurant_menu : Icons.fastfood;
+    final icon = isFood ? Ionicons.pizza : Ionicons.fast_food;
     const color = shoplixOrange;
     const textColor = shoplixColor;
     const st = TextStyle(fontSize: 24, color: textColor);

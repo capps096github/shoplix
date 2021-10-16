@@ -41,8 +41,9 @@ class SearchResultItem extends ConsumerWidget {
                         height: 75,
                         placeholder: (context, url) {
                           final isFood = menuItem.group == 'Food';
-                          final icon =
-                              isFood ? Icons.restaurant_menu : Icons.fastfood;
+                          final icon = isFood
+                              ? Ionicons.pizza
+                              : Ionicons.fast_food;
                           return Center(
                             child: Icon(
                               icon,
@@ -100,8 +101,8 @@ class SearchResultItem extends ConsumerWidget {
                                             : 'From the Drinks Menu',
                                         child: Icon(
                                           isFood
-                                              ? Icons.restaurant_menu
-                                              : Icons.fastfood,
+                                              ? Ionicons.pizza
+                                              : Ionicons.fast_food_outline,
                                           color: shoplixWhite,
                                           size: 16,
                                         ),

@@ -16,7 +16,7 @@ class BagHeader extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.only(left: 20),
           child: Icon(
-            Icons.restaurant_menu,
+            Ionicons.pizza,
             color: shoplixColor,
           ),
         ),
@@ -72,7 +72,7 @@ class BagHeader extends StatelessWidget {
         const Padding(
           padding: EdgeInsets.only(right: 20),
           child: Icon(
-            Icons.fastfood,
+            Ionicons.fast_food_outline,
             color: shoplixColor,
           ),
         ),

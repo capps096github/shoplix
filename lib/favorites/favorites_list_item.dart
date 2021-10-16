@@ -14,7 +14,7 @@ class FavoritesListItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isFood = menuItem.group == 'Food';
-    final icon = isFood ? Icons.restaurant_menu : Icons.fastfood;
+    final icon = isFood ? Ionicons.pizza : Ionicons.fast_food_outline;
     const color = shoplixFavoritePink;
     const textColor = shoplixWhite;
     const st = TextStyle(fontSize: 24, color: textColor);
