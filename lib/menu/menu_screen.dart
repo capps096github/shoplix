@@ -26,28 +26,19 @@ class MenuScreenWidget extends StatelessWidget {
     return Scaffold(
       backgroundColor: kalyaOrange50,
       appBar: AppBar(
-        backgroundColor: kalyaOrange100,
+        backgroundColor: shoplixOrange,
         title: const PageTitle(
-          title: 'KALYA MENU',
-          color: kalyaBrown900,
+          title: 'Shoplix',
+          color: shoplixColor,
         ),
-        leading: CloseButton(
-          color: kalyaBrown900,
-          onPressed: () {
-            context.read(isMenuScreenProvider).state = false;
-
-            // context.read(navBarNotifier).setNavBarIndex(navBarIndex: 1);
-
-            // context.read(drawerIndexProvider).state = 0;
-          },
-        ),
+        
       ),
       floatingActionButton: const MenuScreenFAB(),
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
           SliverAppBar(
-            backgroundColor: kalyaOrange100,
+            backgroundColor: shoplixOrange,
             floating: true,
             title: InkWell(
               child: const SearchContainer(),
@@ -60,9 +51,9 @@ class MenuScreenWidget extends StatelessWidget {
             ),
           ),
           SliverAppBar(
-            backgroundColor: kalyaOrange100,
+            backgroundColor: shoplixOrange,
             elevation: 8,
-            shadowColor: kalyaBrown900,
+            shadowColor: shoplixColor,
             pinned: true,
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(kToolbarHeight),

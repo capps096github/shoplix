@@ -15,8 +15,8 @@ class FavoritesListItem extends StatelessWidget {
   Widget build(BuildContext context) {
     final isFood = menuItem.group == 'Food';
     final icon = isFood ? Icons.restaurant_menu : Icons.fastfood;
-    const color = kalyaFavoritePink;
-    const textColor = kalyaWhite;
+    const color = shoplixFavoritePink;
+    const textColor = shoplixWhite;
     const st = TextStyle(fontSize: 24, color: textColor);
 
     return OpenDetail(
@@ -27,7 +27,7 @@ class FavoritesListItem extends StatelessWidget {
             .removeItemFromfavorites(menuItem.id),
         child: Container(
           margin: EdgeInsets.zero,
-          color: kalyaWhite,
+          color: shoplixWhite,
           child: Stack(
             fit: StackFit.expand,
             children: [
@@ -61,7 +61,7 @@ class FavoritesListItem extends StatelessWidget {
                           ),
                         ),
                         const Divider(
-                          color: kalyaWhite,
+                          color: shoplixWhite,
                           endIndent: 10,
                           indent: 10,
                           height: 6,
@@ -78,7 +78,7 @@ class FavoritesListItem extends StatelessWidget {
                               padding: const EdgeInsets.all(4),
                               child: Icon(
                                 icon,
-                                color: kalyaWhite,
+                                color: shoplixWhite,
                                 size: 15,
                               ),
                             ),
@@ -100,10 +100,10 @@ class FavoritesListItem extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.all(8.0),
                   child: CircleAvatar(
-                    backgroundColor: kalyaFavoritePink,
+                    backgroundColor: shoplixFavoritePink,
                     child: Icon(
                       Icons.favorite,
-                      color: kalyaWhite,
+                      color: shoplixWhite,
                     ),
                   ),
                 ),

@@ -23,7 +23,7 @@ class _AddToCartButtonState extends State<AddToCartButton> {
         duration: const Duration(microseconds: 500),
         child: Icon(
           isTapped ? Icons.check_circle : Icons.shopping_bag,
-          color: kalyaWhite,
+          color: shoplixWhite,
           key: Key(
             isTapped ? 'Added to Your Bag' : 'Add to Your Bag',
           ),
@@ -48,7 +48,7 @@ class _AddToCartButtonState extends State<AddToCartButton> {
             isTapped ? 'Added to Your Bag' : 'Add to Bag',
           ),
           style: TextStyle(
-              color: kalyaWhite,
+              color: shoplixWhite,
               fontWeight: isTapped ? FontWeight.w900 : FontWeight.normal),
         ),
       ),
@@ -56,7 +56,7 @@ class _AddToCartButtonState extends State<AddToCartButton> {
         shape: MaterialStateProperty.all(
           const StadiumBorder(),
         ),
-        backgroundColor: MaterialStateProperty.all(kalyaBrown900),
+        backgroundColor: MaterialStateProperty.all(shoplixColor),
       ),
     );
   }

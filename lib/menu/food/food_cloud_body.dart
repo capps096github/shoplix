@@ -57,7 +57,7 @@ class FoodCloudBody extends ConsumerWidget {
         },
         loading: () => const SliverFillRemaining(
             child:
-                Center(child: CircularProgressIndicator(color: kalyaBrown900))
+                Center(child: CircularProgressIndicator(color: shoplixColor))
             // : const LoadingFoods(),
             ),
         error: (error, stackTrace) => SliverFillRemaining(

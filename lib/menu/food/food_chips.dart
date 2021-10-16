@@ -49,23 +49,24 @@ class _FoodChipsState extends State<FoodChips> with RestorationMixin {
                   child: FilterChip(
                     pressElevation: 10,
                     label: Text(foodCategories[index]),
-                    backgroundColor: kalyaWhite,
+                    backgroundColor: shoplixWhite,
                     avatar: _indexSelected.value == index
                         ? const CircleAvatar(
-                            backgroundColor: kalyaWhite,
+                            backgroundColor: shoplixWhite,
                             child: Icon(
                               Icons.restaurant_menu,
                               size: 14,
+                              color: shoplixColor,
                             ),
                           )
                         : null,
                     showCheckmark: false,
-                    selectedColor: kalyaBrown900,
+                    selectedColor: shoplixColor,
                     tooltip: '${foodCategories[index]} Category',
                     labelStyle: TextStyle(
                       color: _indexSelected.value == index
-                          ? kalyaWhite
-                          : kalyaBrown900,
+                          ? shoplixWhite
+                          : shoplixColor,
                     ),
                     selected: _indexSelected.value == index,
                     onSelected: (value) {

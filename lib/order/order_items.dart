@@ -13,7 +13,7 @@ class OrderItems extends StatelessWidget {
         final bagHive = watch(bagHiveProvider);
         final orderDataSource = OrderDataSource(bagItems: bagHive.bagItems);
 
-        const c = kalyaBrown900;
+        const c = shoplixColor;
         const c2 = kalyaOrange50;
         return Column(
           // mainAxisSize: MainAxisSize.min,
@@ -149,7 +149,7 @@ class OrderDataSource extends DataGridSource {
       (e) {
         return Consumer(
           builder: (context, watch, child) {
-            const c = kalyaBrown900;
+            const c = shoplixColor;
             if ((rowIndex % 2) == 0) {
               backgroundColor = kalyaOrange50;
             }

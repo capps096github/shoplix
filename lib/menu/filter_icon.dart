@@ -11,7 +11,7 @@ class FilterIcon extends StatelessWidget {
       padding: EdgeInsets.all(8.0),
       child: Icon(
         Icons.tune,
-        color: kalyaBrown900,
+        color: shoplixColor,
         semanticLabel: 'filter',
       ),
     );

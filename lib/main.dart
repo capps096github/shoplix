@@ -1,16 +1,18 @@
-import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+import 'app_exporter.dart';
 
-class MyApp extends StatelessWidget {
-  const MyApp({ Key? key }) : super(key: key);
+void main() async {
+  await Hive.initFlutter();
+  Hive.registerAdapter(BagItemAdapter());
+  Hive.registerAdapter(MenuItemAdapter());
+  Hive.registerAdapter(SearchItemAdapter());
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      
-    );
-  }
+  runApp(
+    const ProviderScope(
+      child:  RootRestorationScope(
+        restorationId: 'shoplix',
+        child:  FirebaseConnector(),
+      ),
+    ),
+  );
 }

@@ -37,7 +37,7 @@ class FavoritesBanner extends ConsumerWidget {
                                 : bannerContent.indexOf(text) == 1
                                     ? Icons.touch_app_outlined
                                     : CupertinoIcons.tornado,
-                            color: kalyaFavoritePink,
+                            color: shoplixFavoritePink,
                           ),
                         ),
                         Flexible(
@@ -46,7 +46,7 @@ class FavoritesBanner extends ConsumerWidget {
                             softWrap: true,
                             style: const TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: kalyaFavoritePink,
+                              color: shoplixFavoritePink,
                             ),
                           ),
                         ),
@@ -58,7 +58,7 @@ class FavoritesBanner extends ConsumerWidget {
                                 : bannerContent.indexOf(text) == 1
                                     ? CupertinoIcons.delete
                                     : CupertinoIcons.tornado,
-                            color: kalyaFavoritePink,
+                            color: shoplixFavoritePink,
                           ),
                         ),
                       ],
@@ -72,7 +72,7 @@ class FavoritesBanner extends ConsumerWidget {
                   },
                   icon: const Icon(
                     Icons.cancel,
-                    color: kalyaFavoritePink,
+                    color: shoplixFavoritePink,
                   ),
                 ),
               ],

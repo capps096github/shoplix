@@ -12,7 +12,7 @@ class RecentsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: kalyaOrange100,
+      color: shoplixOrange,
       child: Consumer(
         builder: (context, watch, _) {
           final favoritesHive = watch(favoritesProvider);
@@ -65,7 +65,7 @@ class RecentsList extends StatelessWidget {
                     child: Icon(
                       Icons.manage_search_rounded,
                       size: 100,
-                      color: kalyaBrown900,
+                      color: shoplixColor,
                     ),
                   ),
                 ),
@@ -94,7 +94,7 @@ class _SectionHeader extends StatelessWidget {
   const _SectionHeader({
     Key? key,
     required this.title,
-    this.titleColor = kalyaBrown900,
+    this.titleColor = shoplixColor,
   }) : super(key: key);
   final String title;
   final Color titleColor;
@@ -134,12 +134,12 @@ class _SearchHistoryTile extends StatelessWidget {
       child: ListTile(
         leading: const Icon(
           Icons.saved_search_rounded,
-          color: kalyaBrown900,
+          color: shoplixColor,
         ),
         title: Text(searchItem.name),
         subtitle: Text(
           '${searchItem.category} • Category',
-          style: const TextStyle(color: kalyaBrown900),
+          style: const TextStyle(color: shoplixColor),
         ),
         trailing: showIcon
             ? IconButton(
@@ -148,7 +148,7 @@ class _SearchHistoryTile extends StatelessWidget {
                     .removeItemFromrecentSearches(searchItem.id),
                 icon: const Icon(
                   Icons.close,
-                  color: kalyaBrown900,
+                  color: shoplixColor,
                 ),
               )
             : null,

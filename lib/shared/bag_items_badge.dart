@@ -13,7 +13,7 @@ class BagItemsBadge extends ConsumerWidget {
       // alignment: Alignment.topRight,
       toAnimate: false,
       position: BadgePosition.topEnd(),
-      badgeColor: kalyaRed,
+      badgeColor: shoplixRed,
       showBadge: numOfItems == 0 ? false : true,
       badgeContent: Text(
         numOfItems >= 100 ? '99+' : '$numOfItems',

@@ -38,7 +38,7 @@ class ViewRelatedMenuItemsCard extends ConsumerWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             ListTile(
-              tileColor: kalyaBrown900,
+              tileColor: shoplixColor,
               title: Text(
                 'View Other ${menuItem.category}$x',
                 style: const TextStyle(color: kalyaOrange50),
@@ -61,7 +61,7 @@ class ViewRelatedMenuItemsCard extends ConsumerWidget {
                           : menuListProvider.relatedDrinksList(
                               menuItems: menuList, drink: menuItem);
                       return menuListProvider.isListLoading
-                          ? Container(color: kalyaOrange100)
+                          ? Container(color: shoplixOrange)
                           : ListView.builder(
                               itemBuilder: (context, index) {
                                 final it = relatedList[index];
@@ -80,7 +80,7 @@ class ViewRelatedMenuItemsCard extends ConsumerWidget {
                             clipBehavior: Clip.antiAlias,
                             margin: const EdgeInsets.all(2),
                             decoration: BoxDecoration(
-                              color: kalyaOrange100,
+                              color: shoplixOrange,
                               borderRadius: BorderRadius.circular(4),
                             ),
                           );
@@ -110,7 +110,7 @@ class RelatedIcon extends StatelessWidget {
       margin: const EdgeInsets.all(2),
       width: s,
       decoration: BoxDecoration(
-        color: kalyaOrange100.withOpacity(0.5),
+        color: shoplixOrange.withOpacity(0.5),
         borderRadius: BorderRadius.circular(4),
       ),
       child: Stack(
@@ -123,7 +123,7 @@ class RelatedIcon extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              color: kalyaBrown900,
+              color: shoplixColor,
               width: double.infinity,
               padding: const EdgeInsets.all(4),
               child: Text(

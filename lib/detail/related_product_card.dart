@@ -40,7 +40,7 @@ class RelatedProductsCard extends StatelessWidget {
               alignment: Alignment.bottomCenter,
               child: DecoratedBox(
                 decoration: const BoxDecoration(
-                  color: kalyaBrown900,
+                  color: shoplixColor,
                 ),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
@@ -55,7 +55,7 @@ class RelatedProductsCard extends StatelessWidget {
                       child: Text(
                         product.name,
                         style:
-                            theme.textTheme.button?.copyWith(color: kalyaWhite),
+                            theme.textTheme.button?.copyWith(color: shoplixWhite),
                         softWrap: true,
                         textAlign: TextAlign.center,
                       ),
@@ -64,7 +64,7 @@ class RelatedProductsCard extends StatelessWidget {
                     Text(
                       formatter.format(product.price),
                       style:
-                          theme.textTheme.caption?.copyWith(color: kalyaWhite),
+                          theme.textTheme.caption?.copyWith(color: shoplixWhite),
                     ),
                     const SizedBox(height: 20),
                   ],

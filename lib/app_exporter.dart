@@ -29,6 +29,7 @@ export 'package:flash/flash.dart';
 
 ///[Firebase]
 export 'package:firebase_core/firebase_core.dart';
+export 'package:firebase_analytics/firebase_analytics.dart';
 
 // * Auth
 export 'package:firebase_auth/firebase_auth.dart';
@@ -61,4 +62,8 @@ export 'order/exporter.dart';
 // cloud database
 export 'cloud/database_notifier.dart';
 
+// app
+export 'app/exporter.dart';
 
+// connectors
+export 'connectors/exporter.dart';

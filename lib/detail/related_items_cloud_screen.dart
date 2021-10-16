@@ -45,7 +45,7 @@ class RelatedItemsCloudScreen extends ConsumerWidget {
           );
         },
         loading: () => const Center(
-            child: CircularProgressIndicator(color: kalyaBrown900)),
+            child: CircularProgressIndicator(color: shoplixColor)),
         error: (error, stackTrace) => Container(color: Colors.red));
   }
 }

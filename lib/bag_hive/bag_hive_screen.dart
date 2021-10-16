@@ -17,11 +17,11 @@ class BagHiveScreen extends ConsumerWidget {
 
     timeDilation = 3;
     return Scaffold(
-      backgroundColor: kalyaBrown900,
+      backgroundColor: shoplixColor,
       appBar: AppBar(
-        backgroundColor: kalyaOrange100,
+        backgroundColor: shoplixOrange,
         leading: const BackButton(
-          color: kalyaBrown900,
+          color: shoplixColor,
         ),
         title: const PageTitle(title: 'BAG'),
         bottom: bagHive.bagBox.isNotEmpty
@@ -104,7 +104,7 @@ class NoItems extends StatelessWidget {
             'Add\n "Foods and Drinks to your Bag"\n Here',
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: kalyaOrange100,
+              color: shoplixOrange,
               fontWeight: FontWeight.w700,
             ),
           ),
@@ -147,7 +147,7 @@ class _EmptyBagState extends State<EmptyBag> {
           );
         } else {
           return const Center(
-              child: CircularProgressIndicator(color: kalyaOrange100));
+              child: CircularProgressIndicator(color: shoplixOrange));
         }
       },
     );

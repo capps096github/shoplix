@@ -22,7 +22,7 @@ class SelectDateTimeNavBar extends ConsumerWidget {
               ),
             ),
             backgroundColor: MaterialStateProperty.all(
-              isTimeDate1Set ? kalyaFavoritePink : kalyaOrange50,
+              isTimeDate1Set ? shoplixFavoritePink : kalyaOrange50,
             ),
             padding: MaterialStateProperty.all(
               const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -34,13 +34,13 @@ class SelectDateTimeNavBar extends ConsumerWidget {
             await pickTime(context, orderTime);
           },
           icon: Icon(CupertinoIcons.calendar_today,
-              color: isTimeDate1Set ? kalyaWhite : kalyaBrown900),
+              color: isTimeDate1Set ? shoplixWhite : shoplixColor),
           label: Text(
             isTimeDate1Set
                 ? 'Change Selected Date & Time'
                 : 'Select Date & Time',
             style: TextStyle(
-              color: isTimeDate1Set ? kalyaWhite : kalyaBrown900,
+              color: isTimeDate1Set ? shoplixWhite : shoplixColor,
               fontWeight: FontWeight.w900,
             ),
             key: const ValueKey('confirm'),
@@ -51,7 +51,7 @@ class SelectDateTimeNavBar extends ConsumerWidget {
             width: double.infinity,
             margin: const EdgeInsets.all(8),
             child: DialogButton(
-              textColor: kalyaBrown900,
+              textColor: shoplixColor,
               buttonColor: kalyaOrange50,
               icon: Icons.arrow_forward,
               text: 'CONTINUE',

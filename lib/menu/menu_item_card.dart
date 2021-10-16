@@ -16,8 +16,8 @@ class MenuItemCard extends ConsumerWidget {
     // timeDilation = 2;
     final isFood = menuItem.group == 'Food';
     final icon = isFood ? Icons.restaurant_menu : Icons.fastfood;
-    const color = kalyaOrange100;
-    const textColor = kalyaBrown900;
+    const color = shoplixOrange;
+    const textColor = shoplixColor;
     const st = TextStyle(fontSize: 24, color: textColor);
 
     return OpenDetail(

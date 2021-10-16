@@ -17,13 +17,13 @@ class BagHeader extends StatelessWidget {
           padding: EdgeInsets.only(left: 20),
           child: Icon(
             Icons.restaurant_menu,
-            color: kalyaBrown900,
+            color: shoplixColor,
           ),
         ),
         Container(
           padding: const EdgeInsets.all(4),
           decoration: const BoxDecoration(
-            color: kalyaBrown900,
+            color: shoplixColor,
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(12),
               topRight: Radius.circular(12),
@@ -37,7 +37,7 @@ class BagHeader extends StatelessWidget {
                 padding: EdgeInsets.all(8.0),
                 child: Icon(
                   Icons.shopping_bag,
-                  color: kalyaOrange100,
+                  color: shoplixOrange,
                 ),
               ),
               Column(
@@ -46,7 +46,7 @@ class BagHeader extends StatelessWidget {
                   const Text(
                     'Food & Drinks Bag',
                     style: TextStyle(
-                        color: kalyaOrange100, fontWeight: FontWeight.w700),
+                        color: shoplixOrange, fontWeight: FontWeight.w700),
                   ),
                   Consumer(
                     builder: (context, watch, child) {
@@ -73,7 +73,7 @@ class BagHeader extends StatelessWidget {
           padding: EdgeInsets.only(right: 20),
           child: Icon(
             Icons.fastfood,
-            color: kalyaBrown900,
+            color: shoplixColor,
           ),
         ),
       ],

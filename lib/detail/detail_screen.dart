@@ -6,7 +6,7 @@ import 'related_items_cloud_screen.dart';
 
 const st = TextStyle(
   fontSize: 24,
-  color: kalyaBrown900,
+  color: shoplixColor,
   fontWeight: FontWeight.w900,
 );
 
@@ -28,7 +28,7 @@ class DetailScreen extends ConsumerWidget {
     ///[ that excludes the currently selected item]
     return Scaffold(
       extendBodyBehindAppBar: isRelatedItemScreen ? false : true,
-      backgroundColor: kalyaOrange100,
+      backgroundColor: shoplixOrange,
       appBar: buildAppBar(
         isRelatedItemScreen: isRelatedItemScreen,
         title: '${menuItem.group}s',
@@ -49,7 +49,7 @@ class DetailScreen extends ConsumerWidget {
             SharedAxisTransition(
           animation: animation,
           secondaryAnimation: secondaryAnimation,
-          fillColor: kalyaOrange100,
+          fillColor: shoplixOrange,
           // key: isRelatedItemScreen ? ValueKey('Related') : ValueKey('Detail'),
           transitionType: SharedAxisTransitionType.horizontal,
 
@@ -77,8 +77,8 @@ class DetailScreen extends ConsumerWidget {
         : AppBar(
             backgroundColor: Colors.transparent,
             leading: AppBarIcon(
-              child: BackButton(color: kalyaWhite, onPressed: back),
-              bacColor: kalyaBrown900,
+              child: BackButton(color: shoplixWhite, onPressed: back),
+              bacColor: shoplixColor,
             ),
             // actions: [
             //   AppBarIcon(

@@ -20,7 +20,7 @@ class AddToFavorite extends ConsumerWidget {
       duration: const Duration(milliseconds: 700),
       margin: const EdgeInsets.only(left: 6),
       decoration: BoxDecoration(
-        color: isFav ? kalyaFavoritePink : kalyaBrown900,
+        color: isFav ? shoplixFavoritePink : shoplixColor,
         shape: BoxShape.circle,
       ),
       child: AnimatedSwitcher(
@@ -28,7 +28,7 @@ class AddToFavorite extends ConsumerWidget {
         child: IconButton(
           key: Key('$isFav'),
           onPressed: () => favoritesHive.addItemTofavorites(menuItem),
-          color: kalyaWhite,
+          color: shoplixWhite,
           icon: Icon(isFav ? Icons.favorite : Icons.favorite_outline),
         ),
       ),

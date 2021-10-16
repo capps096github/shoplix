@@ -16,12 +16,12 @@ class FavoritesScreen extends ConsumerWidget {
   Widget build(BuildContext context, watch) {
     final favoritesHive = watch(favoritesProvider);
     return Scaffold(
-      backgroundColor: kalyaFavoriteBacground,
+      backgroundColor: shoplixFavoriteBacground,
       appBar: AppBar(
-        backgroundColor: kalyaFavoritePink,
+        backgroundColor: shoplixFavoritePink,
         elevation: 8,
         leading: const CloseButton(
-          color: kalyaWhite,
+          color: shoplixWhite,
         ),
         title: const Text('Favorites'),
       ),
@@ -62,7 +62,7 @@ class NoFavorites extends StatelessWidget {
               'Add\n "Your Favorite Foods and Drinks"\n Here',
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: kalyaFavoritePink,
+                color: shoplixFavoritePink,
                 fontWeight: FontWeight.w700,
               ),
             ),
@@ -109,7 +109,7 @@ class _FavoriteHeartState extends State<FavoriteHeart> {
         } else {
           return const Center(
               child: CircularProgressIndicator(
-            color: kalyaFavoritePink,
+            color: shoplixFavoritePink,
           ));
         }
       },

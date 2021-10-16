@@ -5,7 +5,7 @@ class ReceiptText extends StatelessWidget {
     Key? key,
     required this.text,
     required this.boldText,
-    this.textColor = kalyaBrown900,
+    this.textColor = shoplixColor,
     this.isLink = false,
   }) : super(key: key);
 

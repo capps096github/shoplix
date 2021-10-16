@@ -32,7 +32,7 @@ class ConfirmButton extends ConsumerWidget {
                   ),
                 ),
                 backgroundColor: MaterialStateProperty.all(
-                  isConfirmed ? Colors.green : kalyaBrown900,
+                  isConfirmed ? Colors.green : shoplixColor,
                 ),
                 padding: MaterialStateProperty.all(
                   const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -86,14 +86,14 @@ class ConfirmButton extends ConsumerWidget {
                   isConfirmed
                       ? Icons.verified
                       : CupertinoIcons.square_fill_line_vertical_square_fill,
-                  color: isConfirmed ? kalyaWhite : kalyaOrange50),
+                  color: isConfirmed ? shoplixWhite : kalyaOrange50),
               label: AnimatedSwitcher(
                 duration: const Duration(milliseconds: 500),
                 child: isConfirmed
                     ? const Text(
                         'Your Order has Been Placed',
                         style: TextStyle(
-                          color: kalyaWhite,
+                          color: shoplixWhite,
                           fontWeight: FontWeight.w900,
                         ),
                         key: ValueKey('confirmed'),

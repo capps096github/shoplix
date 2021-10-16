@@ -36,7 +36,7 @@ class TextStyles {
         height: 1.16,
         shadows: const [
           Shadow(
-            color: kalyaBrown900,
+            color: shoplixColor,
             offset: Offset(1, 1),
           ),
         ],
@@ -49,7 +49,7 @@ class TextStyles {
         height: 1.31,
         shadows: [
           const Shadow(
-            color: kalyaBrown900,
+            color: shoplixColor,
             offset: Offset(1, 1),
           ),
         ],
@@ -70,7 +70,7 @@ class TextStyles {
   static TextStyle get callout1 => nunito.copyWith(
       fontWeight: FontWeight.w800,
       fontSize: FontSizes.s12,
-      color: kalyaBrown900,
+      color: shoplixColor,
       height: 1.17,
       letterSpacing: .5);
   static TextStyle get callout2 =>
@@ -79,6 +79,6 @@ class TextStyles {
         fontWeight: FontWeight.w500,
         fontSize: FontSizes.s11,
         height: 1.36,
-        color: kalyaWhite,
+        color: shoplixWhite,
       );
 }

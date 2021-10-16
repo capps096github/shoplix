@@ -39,7 +39,7 @@ class Receipt extends ConsumerWidget {
           clipper: OrderClipper(true, true),
           child: Container(
             decoration: BoxDecoration(
-              color: kalyaWhite,
+              color: shoplixWhite,
               border: Border.all(
                 color: c,
                 width: 1.2,
@@ -110,18 +110,18 @@ class Receipt extends ConsumerWidget {
                 Container(
                   margin: const EdgeInsets.all(8.0),
                   decoration: BoxDecoration(
-                    color: kalyaBrown900,
+                    color: shoplixColor,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   height: 3,
                 ),
                 BoldText(
-                  text: '© The Kalya Courts Hotel App - ${DateTime.now().year}',
+                  text: '© The Shoplix App - ${DateTime.now().year}',
                   textColor: const Color(0xFF192D30),
                 ),
                 const BoldText(
                   text: 'GET IT TODAY',
-                  textColor: kalyaFavoritePink,
+                  textColor: shoplixFavoritePink,
                   decoration: TextDecoration.underline,
                 ),
                 Padding(
@@ -131,12 +131,12 @@ class Receipt extends ConsumerWidget {
                     children:const [
                       ReceiptText(
                         boldText: 'PLAY STORE:',
-                        text: 'Kalya Courts Hotel',
-                        textColor: kalyaWhatsApp,
+                        text: 'Shoplix App',
+                        textColor: shoplixWhatsApp,
                       ),
                       ReceiptText(
                         boldText: 'WEB:',
-                        textColor: kalyaBlue,
+                        textColor: shoplixBlue,
                         isLink: true,
                         text: 'https://kalyacourtshotel.web.app',
                       ),

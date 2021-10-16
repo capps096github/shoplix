@@ -36,10 +36,10 @@ class MenuControl extends StatelessWidget {
 
           return CupertinoSegmentedControl<int>(
             padding: const EdgeInsets.all(0),
-            selectedColor: kalyaBrown900,
+            selectedColor: shoplixColor,
             children: children,
-            pressedColor: kalyaWhite,
-            borderColor: kalyaWhite,
+            pressedColor: shoplixWhite,
+            borderColor: shoplixWhite,
             onValueChanged: (int newValue) {
               context.read(currentMenuIndexProvider).state = newValue;
               isFood

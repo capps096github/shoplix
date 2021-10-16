@@ -18,7 +18,7 @@ class OrderNavBar extends ConsumerWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        color: isTimeDateSet ? kalyaOrange50 : kalyaBrown900,
+        color: isTimeDateSet ? kalyaOrange50 : shoplixColor,
       ),
       child: Padding(
         padding: const EdgeInsets.all(2),
@@ -33,7 +33,7 @@ class OrderNavBar extends ConsumerWidget {
                 height: 4,
                 width: 30,
                 decoration: BoxDecoration(
-                  color: isConfirmed ? Colors.green : kalyaBrown900,
+                  color: isConfirmed ? Colors.green : shoplixColor,
                   borderRadius: BorderRadius.circular(20),
                 ),
               ),
@@ -48,8 +48,8 @@ class OrderNavBar extends ConsumerWidget {
                 width: double.infinity,
                 margin: const EdgeInsets.all(8),
                 child: DialogButton(
-                  textColor: kalyaWhite,
-                  buttonColor: kalyaRed,
+                  textColor: shoplixWhite,
+                  buttonColor: shoplixRed,
                   icon: CupertinoIcons.bag_fill_badge_minus,
                   text: 'Cancel Order',
                   onTap: () async {

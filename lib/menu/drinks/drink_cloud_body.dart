@@ -55,7 +55,7 @@ class DrinkCloudBody extends ConsumerWidget {
         },
         loading: () => const SliverFillRemaining(
               child: Center(
-                  child: CircularProgressIndicator(color: kalyaBrown900)),
+                  child: CircularProgressIndicator(color: shoplixColor)),
             ),
         error: (error, stackTrace) =>
             SliverFillRemaining(child: Container(color: Colors.red)));

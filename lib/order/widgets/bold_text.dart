@@ -5,7 +5,7 @@ class BoldText extends StatelessWidget {
     Key? key,
     required this.text,
     this.decoration = TextDecoration.none,
-    this.textColor = kalyaBrown900,
+    this.textColor = shoplixColor,
   }) : super(key: key);
 
   final String text;

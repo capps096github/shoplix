@@ -10,7 +10,7 @@ class LoadingMenuItem extends StatelessWidget {
       margin: EdgeInsets.zero,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
-        color: kalyaOrange100.withOpacity(0.5),
+        color: shoplixOrange.withOpacity(0.5),
       ),
     );
   }

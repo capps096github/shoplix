@@ -23,8 +23,8 @@ class ItemImage extends StatelessWidget {
               width: sizeHW,
               child: Card(
                 shape: CircleBorder(),
-                color: kalyaBrown900,
-                shadowColor: kalyaBrown900,
+                color: shoplixColor,
+                shadowColor: shoplixColor,
               ),
             ),
           ),
@@ -36,7 +36,7 @@ class ItemImage extends StatelessWidget {
               width: sizeHW,
               child: Card(
                 shape: const CircleBorder(),
-                color: kalyaWhite,
+                color: shoplixWhite,
                 elevation: 8,
                 child: ClipOval(
                   child: KalyaImage(

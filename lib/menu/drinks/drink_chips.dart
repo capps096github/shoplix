@@ -51,22 +51,23 @@ class _DrinkChipsState extends State<DrinkChips> with RestorationMixin {
                   child: FilterChip(
                     pressElevation: 10,
                     label: Text(drinkCategories[index]),
-                    backgroundColor: kalyaWhite,
+                    backgroundColor: shoplixWhite,
                     avatar: _indexSelected.value == index
                         ? const CircleAvatar(
-                            backgroundColor: kalyaWhite,
+                            backgroundColor: shoplixWhite,
                             child: Icon(
                               Icons.fastfood,
                               size: 14,
+                              color: shoplixColor,
                             ),
                           )
                         : null,
                     showCheckmark: false,
-                    selectedColor: kalyaBrown900,
+                    selectedColor: shoplixColor,
                     labelStyle: TextStyle(
                       color: _indexSelected.value == index
-                          ? kalyaWhite
-                          : kalyaBrown900,
+                          ? shoplixWhite
+                          : shoplixColor,
                     ),
                     selected: _indexSelected.value == index,
                     onSelected: (value) {

@@ -10,7 +10,7 @@ class SuggestionsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: kalyaBrown900,
+      color: shoplixColor,
       padding: const EdgeInsets.only(top: 16),
       key: const Key('list'),
       child: Consumer(builder: (context, watch, child) {
@@ -42,13 +42,13 @@ class SuggestionsList extends StatelessWidget {
                           'Opps! We dont have "$query" on our '
                           'menu,Give us feedback wether we should add it',
                           textAlign: TextAlign.center,
-                          style: const TextStyle(color: kalyaWhite),
+                          style: const TextStyle(color: shoplixWhite),
                         ),
                       ),
                     );
             },
             loading: () => const Center(
-                child: CircularProgressIndicator(color: kalyaBrown900)),
+                child: CircularProgressIndicator(color: shoplixColor)),
             error: (error, stackTrace) {
               return Container(
                 color: Colors.red,

@@ -21,7 +21,7 @@ class FavBottomNavBar extends ConsumerWidget {
                   height: 4,
                   width: 30,
                   decoration: BoxDecoration(
-                    color: kalyaFavoritePink,
+                    color: shoplixFavoritePink,
                     borderRadius: BorderRadius.circular(20),
                   ),
                 ),
@@ -33,7 +33,7 @@ class FavBottomNavBar extends ConsumerWidget {
                       ),
                     ),
                     backgroundColor:
-                        MaterialStateProperty.all(kalyaFavoritePink),
+                        MaterialStateProperty.all(shoplixFavoritePink),
                     padding: MaterialStateProperty.all(
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                     ),
@@ -44,12 +44,12 @@ class FavBottomNavBar extends ConsumerWidget {
                   },
                   icon: const Icon(
                     CupertinoIcons.rectangle_fill_on_rectangle_angled_fill,
-                    color: kalyaWhite,
+                    color: shoplixWhite,
                   ),
                   label: const Text(
                     'Clear Favorites',
                     style: TextStyle(
-                      color: kalyaWhite,
+                      color: shoplixWhite,
                       fontWeight: FontWeight.w900,
                     ),
                   ),

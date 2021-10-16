@@ -38,14 +38,14 @@ class BagBottomNavBar extends ConsumerWidget {
                           child: Text(
                             'Order Now',
                             style: TextStyle(
-                              color: kalyaBrown900,
+                              color: shoplixColor,
                               fontWeight: FontWeight.w900,
                               fontSize: 16,
                             ),
                           ),
                         ),
                         style: TextButton.styleFrom(
-                          backgroundColor: kalyaOrange100,
+                          backgroundColor: shoplixOrange,
                           shape: const StadiumBorder(),
                         ),
                       ),

@@ -12,7 +12,7 @@ class OrderScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, watch) {
-    const c = kalyaBrown900;
+    const c = shoplixColor;
     const c2 = kalyaOrange50;
     // final isConfirmed = watch(isOrderConfirmedProvider).state;
     final isTimeDateSet = watch(isTimeDateSetProvider).state;
@@ -47,7 +47,7 @@ class OrderScreen extends ConsumerWidget {
               iconTheme: Theme.of(context).iconTheme,
               centerTitle: true,
               leading: CloseButton(
-                color: kalyaBrown900,
+                color: shoplixColor,
                 onPressed: () {
                   ///Reset all Providers
                   context.read(orderDateProvider).state = DateTime.now();

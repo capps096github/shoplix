@@ -17,7 +17,7 @@ class KalyaSearch extends SearchDelegate<String> {
 
   @override
   PreferredSizeWidget buildBottom(BuildContext context) {
-    final color2 = query.isEmpty ? kalyaOrange100 : kalyaWhite;
+    final color2 = query.isEmpty ? shoplixOrange : shoplixWhite;
     return PreferredSize(
       preferredSize: const Size.fromHeight(56),
       child: Container(
@@ -32,7 +32,7 @@ class KalyaSearch extends SearchDelegate<String> {
           ),
         ),
         child: Image.asset(
-          'images/kalya-logo.png',
+          'icons/shoplix_black.png',
           height: 50,
         ),
       ),
@@ -41,10 +41,10 @@ class KalyaSearch extends SearchDelegate<String> {
 
   @override
   ThemeData appBarTheme(BuildContext context) {
-    final color = query.isEmpty ? kalyaBrown900 : kalyaOrange100;
-    final color2 = query.isEmpty ? kalyaOrange100 : kalyaBrown900;
+    final color = query.isEmpty ? shoplixColor : shoplixOrange;
+    final color2 = query.isEmpty ? shoplixOrange : shoplixColor;
     return ThemeData(
-      primaryColor: kalyaBrown900,
+      primaryColor: shoplixColor,
       primarySwatch: query.isEmpty ? Colors.grey : Colors.brown,
       inputDecorationTheme: const InputDecorationTheme(
         hintStyle: TextStyle(color: Colors.white30),
@@ -67,7 +67,7 @@ class KalyaSearch extends SearchDelegate<String> {
             ? IconButton(
                 icon: const Icon(
                   CupertinoIcons.clear_circled_solid,
-                  color: kalyaBrown900,
+                  color: shoplixColor,
                 ),
                 onPressed: () {
                   query = '';
@@ -80,7 +80,7 @@ class KalyaSearch extends SearchDelegate<String> {
 
   @override
   Widget buildLeading(BuildContext context) {
-    final color2 = query.isEmpty ? kalyaOrange100 : kalyaBrown900;
+    final color2 = query.isEmpty ? shoplixOrange : shoplixColor;
 
     return IconButton(
       icon: Icon(

@@ -12,7 +12,7 @@ class SearchContainer extends StatelessWidget {
       margin: const EdgeInsets.all(4),
       constraints: const BoxConstraints(maxWidth: 900),
       decoration: BoxDecoration(
-        color: kalyaWhite,
+        color: shoplixWhite,
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(
@@ -46,7 +46,7 @@ class SearchContainer extends StatelessWidget {
             padding: EdgeInsets.all(8.0),
             child: Icon(
               Icons.tune,
-              color: kalyaBrown900,
+              color: shoplixColor,
               semanticLabel: 'filter',
             ),
           ),
@@ -63,7 +63,7 @@ class SearchContainer extends StatelessWidget {
       cursor: '|',
       curve: Curves.easeIn,
       textStyle: const TextStyle(
-        color: kalyaBrown900,
+        color: shoplixColor,
         fontSize: 14,
         fontWeight: FontWeight.bold,
       ),

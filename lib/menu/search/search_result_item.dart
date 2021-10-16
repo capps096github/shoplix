@@ -46,7 +46,7 @@ class SearchResultItem extends ConsumerWidget {
                           return Center(
                             child: Icon(
                               icon,
-                              color: kalyaBrown900,
+                              color: shoplixColor,
                             ),
                           );
                         },
@@ -71,8 +71,8 @@ class SearchResultItem extends ConsumerWidget {
                                 localTheme.textTheme.subtitle1!.copyWith(
                               fontWeight: FontWeight.w900,
                               fontSize: 18,
-                              backgroundColor: kalyaOrange100,
-                              color: kalyaBrown900,
+                              backgroundColor: shoplixOrange,
+                              color: shoplixColor,
                               // decoration: TextDecoration.underline,
                             ),
                           ),
@@ -102,7 +102,7 @@ class SearchResultItem extends ConsumerWidget {
                                           isFood
                                               ? Icons.restaurant_menu
                                               : Icons.fastfood,
-                                          color: kalyaWhite,
+                                          color: shoplixWhite,
                                           size: 16,
                                         ),
                                       ),
@@ -116,15 +116,15 @@ class SearchResultItem extends ConsumerWidget {
                             text: menuItem.category + ' •	Category',
                             term: searchQuery,
                             textStyle: localTheme.textTheme.bodyText1!.copyWith(
-                              color: kalyaWhite,
+                              color: shoplixWhite,
                               fontSize: 10,
                             ),
                             textStyleHighlight:
                                 localTheme.textTheme.bodyText1!.copyWith(
                               fontWeight: FontWeight.w900,
                               fontSize: 12,
-                              backgroundColor: kalyaOrange100,
-                              color: kalyaBrown900,
+                              backgroundColor: shoplixOrange,
+                              color: shoplixColor,
                               // decoration: TextDecoration.underline,
                             ),
                           ),
@@ -136,7 +136,7 @@ class SearchResultItem extends ConsumerWidget {
               ),
               const SizedBox(height: 16),
               const Divider(
-                color: kalyaWhite,
+                color: shoplixWhite,
                 height: 10,
               ),
             ],

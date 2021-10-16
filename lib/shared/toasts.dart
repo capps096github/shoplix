@@ -18,7 +18,7 @@ Future showGoodToast({
             goodText.toUpperCase(),
             textAlign: TextAlign.center,
             style: TextStyle(
-              color: textColor ?? kalyaWhite,
+              color: textColor ?? shoplixWhite,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -28,7 +28,7 @@ Future showGoodToast({
         insetAnimationCurve: Curves.easeIn,
         position: FlashPosition.top,
         borderRadius: BorderRadius.circular(8),
-        backgroundColor: backgroundColor ?? kalyaBlue,
+        backgroundColor: backgroundColor ?? shoplixBlue,
         margin: const EdgeInsets.all(30),
       );
     },

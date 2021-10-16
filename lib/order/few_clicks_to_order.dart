@@ -37,13 +37,13 @@ class FewClicksToOrder extends ConsumerWidget {
                       context.read(isAnimationDoneProvider).state = true,
                   animatedTexts: [
                     TypewriterAnimatedText(
-                      'Hello $_name\n\n You are a few clicks away to ordering your next meal with us at\nKalya Courts Hotel.',
+                      'Hello $_name\n\n You are a few clicks away to ordering your next meal with us at\nShoplix.',
                       textAlign: TextAlign.center,
                       cursor: '|',
                       curve: Curves.easeIn,
                       speed: const Duration(milliseconds: 10),
                       textStyle: const TextStyle(
-                        color: kalyaBrown900,
+                        color: shoplixColor,
                         fontSize: 20,
                         fontWeight: FontWeight.w900,
                       ),
@@ -61,7 +61,7 @@ class FewClicksToOrder extends ConsumerWidget {
                     duration: const Duration(milliseconds: 500),
                     child: const Icon(
                       Ionicons.fast_food_outline,
-                      color: kalyaBrown900,
+                      color: shoplixColor,
                     )),
               ),
             ),
@@ -71,7 +71,7 @@ class FewClicksToOrder extends ConsumerWidget {
                 duration: const Duration(milliseconds: 500),
                 width: double.infinity,
                 decoration: const BoxDecoration(
-                  color: kalyaBrown900,
+                  color: shoplixColor,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(12),
                     topRight: Radius.circular(12),
@@ -94,8 +94,8 @@ class FewClicksToOrder extends ConsumerWidget {
                         padding: EdgeInsets.all(8.0),
                         child: Text(
                           'Select the Date and Time\n'
-                          'You expect to have your Meal at'
-                          '\nKalya Courts Hotel\n and we will\nprepare and get it ready\nfor you.',
+                          'You expect to have your Products at'
+                          '\nShoplix\n and we will\nprepare and get it ready\nfor you.',
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             color: kalyaOrange50,
@@ -109,7 +109,7 @@ class FewClicksToOrder extends ConsumerWidget {
                         child: BoldText(
                           text: 'SELECTED DATE & TIME',
                           decoration: TextDecoration.underline,
-                          textColor: kalyaOrange100,
+                          textColor: shoplixOrange,
                         ),
                       ),
                     if (isTimeDate1Set)
@@ -118,7 +118,7 @@ class FewClicksToOrder extends ConsumerWidget {
                         child: ReceiptText(
                           boldText: 'DATE & TIME:',
                           text: formatedTimeAndDate,
-                          textColor: kalyaOrange100,
+                          textColor: shoplixOrange,
                         ),
                       ),
                     const OrderNavBar(),

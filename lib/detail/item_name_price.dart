@@ -11,7 +11,7 @@ class ItemNamePrice extends StatelessWidget {
     return ListTile(
       title: Text(
         menuItem.name.toUpperCase(),
-        style:TextStyles.h2.copyWith(color: kalyaBrown900),
+        style:TextStyles.h2.copyWith(color: shoplixColor),
       ),
       subtitle: Text(
         menuItem.category + ' • Category',
@@ -23,7 +23,7 @@ class ItemNamePrice extends StatelessWidget {
       ),
       trailing: Text(
         formatter.format(menuItem.price),
-        style:TextStyles.h2.copyWith(color: kalyaBrown900),
+        style:TextStyles.h2.copyWith(color: shoplixColor),
       ),
     );
   }

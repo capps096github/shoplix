@@ -11,13 +11,13 @@ class MenuScreenFAB extends StatelessWidget {
   Widget build(BuildContext context) {
     return  OpenContainer(
         openBuilder: (context, _) => const BagHiveScreen(),
-        openColor: kalyaBrown900,
+        openColor: shoplixColor,
         closedBuilder: (context, openContainer) {
           return Tooltip(
             message: 'Shopping Bag',
             margin: const EdgeInsets.all(4),
             decoration: BoxDecoration(
-              color: kalyaBrown900.withOpacity(.8),
+              color: shoplixColor.withOpacity(.8),
               borderRadius: BorderRadius.circular(4),
             ),
             child: FloatingActionButton(
@@ -32,19 +32,19 @@ class MenuScreenFAB extends StatelessWidget {
                         : CupertinoIcons.bag_fill;
                     return Icon(
                       icon,
-                      color: kalyaOrange100,
+                      color: shoplixOrange,
                     );
                   },
                 ),
               ),
-              backgroundColor: kalyaBrown900,
+              backgroundColor: shoplixColor,
               splashColor: Colors.white70,
             ),
           );
         },
         closedShape: const CircleBorder(),
         closedElevation: 6,
-        closedColor: kalyaBrown900,
+        closedColor: shoplixColor,
         transitionType: ContainerTransitionType.fade,
     );
   }

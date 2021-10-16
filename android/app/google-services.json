@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "886170848880",
+    "project_id": "shoplix-online",
+    "storage_bucket": "shoplix-online.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886170848880:android:c75f7c4ef53a109711eeb5",
+        "android_client_info": {
+          "package_name": "com.capps096apps.shoplix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886170848880-d3f9esetfmg7d26n6shv551m984gv7hr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capps096apps.shoplix",
+            "certificate_hash": "c5db97e6878ebec25e04a3c08e701d9e5db67e9a"
+          }
+        },
+        {
+          "client_id": "886170848880-dtp101i9pc330ug21bn5gqui225109bo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzHAHrBeEZHUZbqAgQJyGF65ricQq5imI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886170848880-dtp101i9pc330ug21bn5gqui225109bo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
