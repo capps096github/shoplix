@@ -1,0 +1,11 @@
+# For the Splash Screen
+  # color of splash screen
+  #  image used in the splash screen.  
+
+flutter_native_splash:
+  color: "#fbaa00"
+  image: icons/shoplix_black.png
+  web: false
+
+  # Always Disable splash screen generation
+  #  for the flutter web coz it disables our PWA support

@@ -1,11 +1,11 @@
 {
-    "name": "shoplix",
-    "short_name": "shoplix",
+    "name": "Shoplix",
+    "short_name": "Shoplix",
     "start_url": ".",
-    "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "display": "minimal-ui",
+    "background_color": "#fbaa00",
+    "theme_color": "#fbaa00",
+    "description": "Best Online Shop.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
