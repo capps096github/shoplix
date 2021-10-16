@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/painting.dart';
 
 import '../app_exporter.dart';
 import 'menu_item.dart';
@@ -19,6 +20,8 @@ class MenuItemCard extends ConsumerWidget {
     const color = shoplixOrange;
     const textColor = shoplixColor;
     const st = TextStyle(fontSize: 24, color: textColor);
+
+    final bagHive = watch(bagHiveProvider);
 
     return OpenDetail(
       menuItem: menuItem,
@@ -89,6 +92,20 @@ class MenuItemCard extends ConsumerWidget {
                         ],
                       ),
                     ],
+                  ),
+                ),
+              ),
+            ),
+            Align(
+              alignment: Alignment.topRight,
+              child: DecoratedBox(
+                decoration: BoxDecoration(color: color.withOpacity(0.8)),
+                child: IconButton(
+                  onPressed:() =>
+                  bagHive.addItemToBag(BagItem.fromMenuItem(item: menuItem)),
+                  icon: const Icon(
+                    Ionicons.bag_add,
+                    color: shoplixColor,
                   ),
                 ),
               ),

@@ -31,12 +31,14 @@ class Receipt extends ConsumerWidget {
         DateFormat('EE, dd MMMM yyyy - hh:mm a').format(orderTimeAndDate);
     final formatedDate =
         DateFormat('EE, dd MMMM yyyy -- hh:mm a').format(currentTimeAndDate);
+    final isMobile = ResponsiveApp.isMobile(context);
 
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20),
       color: kalyaOrange50,
       child: ClipPath(
-        clipper: OrderClipper(true, true),
+        clipper:
+            isMobile ? OrderClipper(true, true) : OrderClipper(false, false),
         child: Container(
           decoration: BoxDecoration(
             color: shoplixWhite,
@@ -138,7 +140,7 @@ class Receipt extends ConsumerWidget {
                       boldText: 'WEB:',
                       textColor: shoplixBlue,
                       isLink: true,
-                      text: 'https://kalyacourtshotel.web.app',
+                      text: 'https://shoplix.web.app',
                     ),
                   ],
                 ),
